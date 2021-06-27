@@ -2,7 +2,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     application
-    kotlin("jvm") version "1.5.10"
+    kotlin("jvm") version "1.5.20"
 }
 
 group = "uk.co.logiccache"
@@ -10,7 +10,7 @@ version = "1.0-SNAPSHOT"
 val koinVersion = "3.1.0"
 
 application {
-    mainClassName = "uk.co.logiccache.petstore.MainKt"
+    mainClass.set("uk.co.logiccache.petstore.MainKt")
 }
 
 repositories {
@@ -18,7 +18,7 @@ repositories {
 }
 
 dependencies {
-    implementation("org.jetbrains.kotlin:kotlin-reflect:1.5.10")
+    implementation("org.jetbrains.kotlin:kotlin-reflect:1.5.20")
     implementation(platform("org.http4k:http4k-bom:4.9.8.0"))
     implementation("org.http4k:http4k-core")
     implementation("org.http4k:http4k-server-netty")
