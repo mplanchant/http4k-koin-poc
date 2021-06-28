@@ -1,7 +1,6 @@
 package uk.co.logiccache.petstore.web
 
 import org.http4k.core.*
-import org.http4k.filter.DebuggingFilters
 import org.http4k.filter.DebuggingFilters.PrintRequest
 import org.http4k.format.Jackson.auto
 import org.http4k.lens.Path
